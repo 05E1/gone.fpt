@@ -1,0 +1,117 @@
+<!-- <div class="parallax ms-3 p-5 text-center shadow-1-strong rounded mb-5 text-success">
+    <h1>Giới thiệu sản phẩm thời trang </h1>
+    <p> Live show fashion online </p>
+    <p> Live tream online at FPT-05E-Shop </p>
+</div> -->
+<section class="product p-3 mt-3 ">
+    <div class="container">
+
+        <div id="nz-div" class="row tde">
+            <div class="col-lg-4 col-md-4 ">
+                <div>
+                    <h3 class="tde"><span class="null">Products {{IDGroups}}</span></h3>
+                </div>
+            </div>
+            <div ng-controller="MenController">
+                <span class="input">
+                    <select ng-model="catchange" class="cs-select cs-skin-underline">
+                        <option value="none">Guci</option>
+                        <option value="photography">BURBERRY</option>
+                        <option value="text">VERSACE</option>
+                        <option value="digital">DIOR</option>
+                        <option value="print">BOSS</option>
+                      
+                    </select>
+                </span>
+            </div>
+        </div>
+        <div class="row property__gallery ">
+            <div class="col-lg-3 col-md-4 col-sm-6 mix women" ng-repeat="x in DataProdut | filter:{IDGroup: 'Girl', Brand:catchange} ">
+                <div class="product__item parallax_Men">
+                    <div class="product__item__pic set-bg" style="background-image: url('img/product/{{x.Images[0]}}' );height: 50vh; ">
+                        <div class="label new ">New</div>
+                        <ul class="product__hover ">
+                            <!-- <li><a href="#!Detailsp" class="image-popup "><span class="arrow_expand "></span></a></li> -->
+                            <li><a href="# "><span class="fa fa-heart "></span></a></li>
+                            <li><a href="# "><span class="fa fa-shopping-bag "></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text team-item rounded ">
+                        <h6><a href="#!Detailsp" ng-click="FnShowSectionSP() ">{{x.NameSP}}</a></h6>
+                        <div class="rating ">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <div class="product__price ">{{x.Price}}</div>
+                    </div>
+                    <div class="team-text text-center bg-white p-4 ">
+                        <h5>Tom Ford</h5>
+                        <span>500.000 $</span>
+                        <div class="d-flex justify-content-center ">
+                            <a class="btn btn-square btn-light m-1 " href=" "><i class="fab fa-twitter "></i></a>
+                            <a class="btn btn-square btn-light m-1 " href=" "><i class="fab fa-facebook-f "></i></a>
+                            <a class="btn btn-square btn-light m-1 " href=" "><i class="fab fa-youtube "></i></a>
+                            <a class="btn btn-square btn-light m-1 " href=" "><i class="fa fa-shopping-bag "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</div>
+
+
+
+
+<!-- Product Section Begin    ng-controller="SearchController " ng-controller="GirlController " -->
+<!-- <section class="product mt-4">
+    <div class="container">
+
+        <div id="nz-div " class="row tde ">
+            <div class="col-lg-4 col-md-4 ">
+                <div>
+                    <h3 class="tde "><span class="null ">Products {{IDGroups}}</span></h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="row property__gallery " ng-controller="GirlController">
+            <div class="col-lg-3 col-md-4 col-sm-6 mix women " ng-repeat="x in DataProdut | filter:{IDGroup: 'Girl' ">
+
+                <div class="product__item ">
+                    <div class="product__item__pic set-bg " style="background-image: url( 'img/product/{{x.Images[0].FileName}}');height: 50vh; ">
+                        <div class="label new ">New</div>
+                        <ul class="product__hover ">
+                            <li><a href="img/product/{{x.Images[0].FileName}} " class="image-popup "><span class="fa fa-street-view "></span></a></li>
+                            <li><a href="# "><span class="fa fa-heart "></span></a></li>
+                            <li><a href="# "><span class="fa fa-shopping-bag "></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text ">
+                        <h6><a href="#!Detailsp " ng-click="FnShowSectionSP() ">{{x.NameSP}}</a></h6>
+                        <div class="rating ">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <div class="product__price ">{{x.Price}}</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+
+
+<!-- Product Section End -->
+<!-- Sản phẩm test lấy từ Json -->
